@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5rem;
+    
+}
+
+h1,h2,h3,h4,h5 {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 20px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+/* - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+svg{
+    margin-bottom: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: hsl(31, 77%, 52%); */
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: hsl(31, 77%, 52%);
+}
+
+li a:hover{
+    background-color: hsl(31, 65%, 44%);
+}
+
+.main-container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: auto; */
+    height: 100vh;
+    width: 65%;
+    margin: auto;
+    /* border-radius: 100px;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    
+}
+
+.box-1{
+    background-color: hsl(31, 77%, 52%);
+    padding: 40px;
+    /* width: 1440px; */
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+.box-2{
+    background: hsl(184, 100%, 22%);
+    padding: 40px;
+    /* width: 1440px; */
+    
+}
+
+.box-3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 40px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    /* width: 1440px; */
+}
+
+.box-1 button{
+    color: hsl(31, 77%, 52%);
+    /* border-color: hsl(31, 77%, 52%); */
+}
+
+.box-2 button{
+    color: hsl(184, 100%, 22%);
+    /* border-color: hsl(184, 100%, 22%); */
+
+}
+
+.box-3 button{
+    color: hsl(179, 100%, 13%);
+    /* border-color: hsl(179, 100%, 13%); */
+}
+
+button{
+    /* width: 100%; */
+    width: 165px;
+    padding: 15px;
+    /* margin-bottom: 18px; */
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+
+@media screen and (max-width: 375px){
+    .main-container{
+        flex-direction: column;
+        width: 80%;
+    }
+}
+

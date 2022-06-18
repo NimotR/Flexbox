@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #24292e;
+}
+
+main{
+    
+    /* display: flex; */
+    /* place-items: center; */
+    /* align-items: center; */
+    /* margin: auto;
+    margin-top: 125px;
+    justify-content: center;
+    width: 50%;  */
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+
+    
+}
+
+.body{
+    
+    width: 50%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: hsl(31, 77%, 52%); */
+}
+
+li a{
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgb(2, 167, 76);
+}
+
+li a:hover{
+    background-color: rgb(40, 128, 79);
+}
+
+.main-container{
+    
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    gap: 15px;
+    
+
+}
+
+div{
+    text-align: center;
+}
+
+.a{
+    background-color:rgb(233, 90, 34);
+    grid-area: a;
+    padding: 110px;
+}
+
+.b{
+    background-color: rgb(255, 166, 31);
+    grid-area: b;
+    padding: 55px;
+
+}
+
+.c{
+    background-color: rgb(2, 167, 76);
+    grid-area: c;
+    padding: 110px;
+
+}
+
+.d{
+    background-color: rgb(12, 181, 233);
+    grid-area: d;
+    padding: 55px;
+
+}
+
+.e{
+    background-color: rgb(12, 181, 233);
+    grid-area: e;
+    padding: 65px;
+
+}
+
+@media screen and (max-width: 375px){
+    main{
+        width: 80%;
+    }
+}
